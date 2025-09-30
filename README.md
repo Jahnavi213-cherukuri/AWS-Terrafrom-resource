@@ -28,6 +28,50 @@ Terraform maintains a state file (terraform.tfstate) to track resources and mana
 **6. Destroying (terraform destroy):**
 This command removes all the resources defined in the configuration.
 
+**7. terraform validate:**
+Check if the configuration is syntactically valid.
+
+**8. terraform fmt:**
+Format configuration files to standard style.
+
+
+**State Management**
+
+**terraform show** → Show the current state or a plan file.
+
+**terraform state list** → List resources in the state file.
+
+**terraform state show <resource>** → Show attributes of a specific resource.
+
+**terraform state rm <resource>** → Remove a resource from the state file.
+
+**terraform state mv <old> <new>** → Move items in the state.
+
+
+**Workspace Commands**
+
+**terraform workspace list** → List workspaces.
+
+**terraform workspace show** → Show current workspace.
+
+**terraform workspace new <name>** → Create a new workspace.
+
+**terraform workspace select <name>** → Switch to another workspace.
+
+**terraform workspace delete <name>** → Delete a workspace.
+
+
+**Provisioning & Dependencies**
+
+**terraform refresh** → Update the state file with real infrastructure.
+
+**terraform import <resource> <id>** → Import existing resources into Terraform.
+
+**terraform graph** → Generate a dependency graph of resources.
+
+
+
+
 **How to Install Terraform**
 
 **Install Terraform on Windows**
@@ -50,22 +94,6 @@ Step4: Open Command Prompt and verify Terraform version using
 **terraform -version**
 
 
-**Why Terraform ?**
-
-There are multiple reasons why Terraform is used over the other IaC tools but below are the main reasons.
-
-**1.Multi-Cloud Support:** Terraform can provision and manage resources across multiple cloud providers like
-
-AWS
-
-Azure 
-
-Google Cloud (GCP) 
-
-On-Premises (VMware, OpenStack, etc.) 
-
-**2. Declarative Configuration:** Terraform uses HCL (HashiCorp Configuration Language), which lets you define what infrastructure should look like, and Terraform figures out how to create it.
-**3. State Management & Automation**
 
 
 
